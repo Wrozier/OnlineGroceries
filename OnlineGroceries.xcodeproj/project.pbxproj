@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0408EA8B2A8E59AA00B35A6B /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA8A2A8E59AA00B35A6B /* OnlineGroceriesApp.swift */; };
-		0408EA8D2A8E59AA00B35A6B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA8C2A8E59AA00B35A6B /* Persistence.swift */; };
 		0408EA902A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA8E2A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld */; };
-		0408EA922A8E59AA00B35A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA912A8E59AA00B35A6B /* ContentView.swift */; };
 		0408EA942A8E59AC00B35A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0408EA932A8E59AC00B35A6B /* Assets.xcassets */; };
 		0408EA982A8E59AC00B35A6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0408EA972A8E59AC00B35A6B /* Preview Assets.xcassets */; };
 		0408EAA22A8E59AC00B35A6B /* OnlineGroceriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAA12A8E59AC00B35A6B /* OnlineGroceriesTests.swift */; };
 		0408EAAC2A8E59AC00B35A6B /* OnlineGroceriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAAB2A8E59AC00B35A6B /* OnlineGroceriesUITests.swift */; };
 		0408EAAE2A8E59AC00B35A6B /* OnlineGroceriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAAD2A8E59AC00B35A6B /* OnlineGroceriesUITestsLaunchTests.swift */; };
+		0408EAC12A8E5C1600B35A6B /* Metropolis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0408EABC2A8E5C1600B35A6B /* Metropolis-ExtraBold.otf */; };
+		0408EAC22A8E5C1600B35A6B /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0408EABD2A8E5C1600B35A6B /* Metropolis-Medium.otf */; };
+		0408EAC32A8E5C1600B35A6B /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0408EABE2A8E5C1600B35A6B /* Metropolis-Bold.otf */; };
+		0408EAC42A8E5C1600B35A6B /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0408EABF2A8E5C1600B35A6B /* Metropolis-SemiBold.otf */; };
+		0408EAC52A8E5C1600B35A6B /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0408EAC02A8E5C1600B35A6B /* Metropolis-Regular.otf */; };
+		0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */; };
+		0408EACF2A8E7C4100B35A6B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408EACE2A8E7C4100B35A6B /* Launch Screen.storyboard */; };
+		0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAD22A8E91F900B35A6B /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +44,7 @@
 /* Begin PBXFileReference section */
 		0408EA872A8E59AA00B35A6B /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408EA8A2A8E59AA00B35A6B /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
-		0408EA8C2A8E59AA00B35A6B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0408EA8F2A8E59AA00B35A6B /* OnlineGroceries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineGroceries.xcdatamodel; sourceTree = "<group>"; };
-		0408EA912A8E59AA00B35A6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0408EA932A8E59AC00B35A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0408EA952A8E59AC00B35A6B /* OnlineGroceries.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnlineGroceries.entitlements; sourceTree = "<group>"; };
 		0408EA972A8E59AC00B35A6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 		0408EAA72A8E59AC00B35A6B /* OnlineGroceriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineGroceriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408EAAB2A8E59AC00B35A6B /* OnlineGroceriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesUITests.swift; sourceTree = "<group>"; };
 		0408EAAD2A8E59AC00B35A6B /* OnlineGroceriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0408EABC2A8E5C1600B35A6B /* Metropolis-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraBold.otf"; sourceTree = "<group>"; };
+		0408EABD2A8E5C1600B35A6B /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		0408EABE2A8E5C1600B35A6B /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		0408EABF2A8E5C1600B35A6B /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		0408EAC02A8E5C1600B35A6B /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		0408EAC62A8E5E9700B35A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0408EACE2A8E7C4100B35A6B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0408EAD22A8E91F900B35A6B /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +112,18 @@
 		0408EA892A8E59AA00B35A6B /* OnlineGroceries */ = {
 			isa = PBXGroup;
 			children = (
+				0408EACA2A8E7AA400B35A6B /* UICommon */,
+				0408EAC92A8E794F00B35A6B /* ViewModel */,
+				0408EAC82A8E793E00B35A6B /* Model */,
+				0408EAC72A8E792E00B35A6B /* View */,
+				0408EAC62A8E5E9700B35A6B /* Info.plist */,
+				0408EABB2A8E5B7B00B35A6B /* Font */,
 				0408EA8A2A8E59AA00B35A6B /* OnlineGroceriesApp.swift */,
-				0408EA8C2A8E59AA00B35A6B /* Persistence.swift */,
-				0408EA912A8E59AA00B35A6B /* ContentView.swift */,
 				0408EA932A8E59AC00B35A6B /* Assets.xcassets */,
 				0408EA952A8E59AC00B35A6B /* OnlineGroceries.entitlements */,
 				0408EA8E2A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld */,
 				0408EA962A8E59AC00B35A6B /* Preview Content */,
+				0408EACE2A8E7C4100B35A6B /* Launch Screen.storyboard */,
 			);
 			path = OnlineGroceries;
 			sourceTree = "<group>";
@@ -133,6 +151,56 @@
 				0408EAAD2A8E59AC00B35A6B /* OnlineGroceriesUITestsLaunchTests.swift */,
 			);
 			path = OnlineGroceriesUITests;
+			sourceTree = "<group>";
+		};
+		0408EABB2A8E5B7B00B35A6B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0408EABE2A8E5C1600B35A6B /* Metropolis-Bold.otf */,
+				0408EABC2A8E5C1600B35A6B /* Metropolis-ExtraBold.otf */,
+				0408EABD2A8E5C1600B35A6B /* Metropolis-Medium.otf */,
+				0408EAC02A8E5C1600B35A6B /* Metropolis-Regular.otf */,
+				0408EABF2A8E5C1600B35A6B /* Metropolis-SemiBold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0408EAC72A8E792E00B35A6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0408EACB2A8E7B0100B35A6B /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0408EAC82A8E793E00B35A6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0408EAC92A8E794F00B35A6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0408EACA2A8E7AA400B35A6B /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				0408EAD22A8E91F900B35A6B /* UIExtension.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		0408EACB2A8E7B0100B35A6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +307,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0408EAC32A8E5C1600B35A6B /* Metropolis-Bold.otf in Resources */,
+				0408EAC22A8E5C1600B35A6B /* Metropolis-Medium.otf in Resources */,
+				0408EACF2A8E7C4100B35A6B /* Launch Screen.storyboard in Resources */,
 				0408EA982A8E59AC00B35A6B /* Preview Assets.xcassets in Resources */,
+				0408EAC52A8E5C1600B35A6B /* Metropolis-Regular.otf in Resources */,
 				0408EA942A8E59AC00B35A6B /* Assets.xcassets in Resources */,
+				0408EAC42A8E5C1600B35A6B /* Metropolis-SemiBold.otf in Resources */,
+				0408EAC12A8E5C1600B35A6B /* Metropolis-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0408EA8B2A8E59AA00B35A6B /* OnlineGroceriesApp.swift in Sources */,
-				0408EA8D2A8E59AA00B35A6B /* Persistence.swift in Sources */,
-				0408EA922A8E59AA00B35A6B /* ContentView.swift in Sources */,
+				0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */,
 				0408EA902A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld in Sources */,
+				0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,16 +501,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnlineGroceries/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -445,10 +522,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grand-Quality-Technology.OnlineGroceries";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,16 +544,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OnlineGroceries/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -483,10 +565,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grand-Quality-Technology.OnlineGroceries";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
