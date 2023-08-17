@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tab_offer.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
