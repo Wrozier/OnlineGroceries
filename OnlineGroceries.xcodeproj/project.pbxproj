@@ -22,6 +22,8 @@
 		0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */; };
 		0408EACF2A8E7C4100B35A6B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408EACE2A8E7C4100B35A6B /* Launch Screen.storyboard */; };
 		0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAD22A8E91F900B35A6B /* UIExtension.swift */; };
+		0408EAD52A8F198400B35A6B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAD42A8F198400B35A6B /* RoundButton.swift */; };
+		0408EAD72A8F1DE600B35A6B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAD62A8F1DE600B35A6B /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0408EACE2A8E7C4100B35A6B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0408EAD22A8E91F900B35A6B /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		0408EAD42A8F198400B35A6B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0408EAD62A8F1DE600B35A6B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				0408EAD22A8E91F900B35A6B /* UIExtension.swift */,
+				0408EAD42A8F198400B35A6B /* RoundButton.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */,
+				0408EAD62A8F1DE600B35A6B /* SignInView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -339,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0408EAD72A8F1DE600B35A6B /* SignInView.swift in Sources */,
 				0408EA8B2A8E59AA00B35A6B /* OnlineGroceriesApp.swift in Sources */,
+				0408EAD52A8F198400B35A6B /* RoundButton.swift in Sources */,
 				0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */,
 				0408EA902A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld in Sources */,
 				0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */,
