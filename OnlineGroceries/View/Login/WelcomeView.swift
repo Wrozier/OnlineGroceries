@@ -23,8 +23,8 @@ struct WelcomeView: View {
                 Image("app_logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 60)
-                    .padding(.bottom, 8)
+                    .frame(width: 290, height: 290)
+                    .padding(.bottom, 60)
                 
                 Text ("Welcome\nto our store")
                     .font(.customfont(.semibold, fontSize: 48))
@@ -43,7 +43,6 @@ struct WelcomeView: View {
                 } label: {
                     
                     RoundButton(title: "Get Started") {
-                    
                     }
                     
                 }
@@ -64,6 +63,9 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        NavigationView {
+            WelcomeView()
+        }
+       
     }
 }
