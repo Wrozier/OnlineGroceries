@@ -26,6 +26,7 @@
 		0408EAD72A8F1DE600B35A6B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EAD62A8F1DE600B35A6B /* SignInView.swift */; };
 		04AFAAFE2A8FC30D000F802D /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 04AFAAFD2A8FC30D000F802D /* CountryPicker */; };
 		04AFAB002A8FC345000F802D /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAAFF2A8FC345000F802D /* CountryPickerUI.swift */; };
+		04AFAB042A8FFAE0000F802D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB032A8FFAE0000F802D /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		0408EAD42A8F198400B35A6B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		0408EAD62A8F1DE600B35A6B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		04AFAAFF2A8FC345000F802D /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		04AFAB032A8FFAE0000F802D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				0408EACC2A8E7B2700B35A6B /* WelcomeView.swift */,
 				0408EAD62A8F1DE600B35A6B /* SignInView.swift */,
+				04AFAB032A8FFAE0000F802D /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				0408EAD52A8F198400B35A6B /* RoundButton.swift in Sources */,
 				0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */,
 				0408EA902A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld in Sources */,
+				04AFAB042A8FFAE0000F802D /* LoginView.swift in Sources */,
 				0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
