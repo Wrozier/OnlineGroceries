@@ -27,6 +27,11 @@
 		04AFAAFE2A8FC30D000F802D /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 04AFAAFD2A8FC30D000F802D /* CountryPicker */; };
 		04AFAB002A8FC345000F802D /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAAFF2A8FC345000F802D /* CountryPickerUI.swift */; };
 		04AFAB042A8FFAE0000F802D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB032A8FFAE0000F802D /* LoginView.swift */; };
+		04AFAB062A902015000F802D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB052A902015000F802D /* MainViewModel.swift */; };
+		04AFAB082A902926000F802D /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB072A902926000F802D /* LineTextField.swift */; };
+		04AFAB0A2A9161E6000F802D /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB092A9161E6000F802D /* ServiceCall.swift */; };
+		04AFAB0C2A917BD4000F802D /* Globs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB0B2A917BD4000F802D /* Globs.swift */; };
+		04AFAB0F2A91A90A000F802D /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFAB0E2A91A90A000F802D /* UIKitExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		0408EAD62A8F1DE600B35A6B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		04AFAAFF2A8FC345000F802D /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 		04AFAB032A8FFAE0000F802D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		04AFAB052A902015000F802D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04AFAB072A902926000F802D /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		04AFAB092A9161E6000F802D /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		04AFAB0B2A917BD4000F802D /* Globs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globs.swift; sourceTree = "<group>"; };
+		04AFAB0E2A91A90A000F802D /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 		0408EA892A8E59AA00B35A6B /* OnlineGroceries */ = {
 			isa = PBXGroup;
 			children = (
+				04AFAB0D2A91A881000F802D /* Common */,
 				0408EACA2A8E7AA400B35A6B /* UICommon */,
 				0408EAC92A8E794F00B35A6B /* ViewModel */,
 				0408EAC82A8E793E00B35A6B /* Model */,
@@ -193,6 +204,7 @@
 		0408EAC92A8E794F00B35A6B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04AFAB052A902015000F802D /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +215,9 @@
 				0408EAD22A8E91F900B35A6B /* UIExtension.swift */,
 				0408EAD42A8F198400B35A6B /* RoundButton.swift */,
 				04AFAAFF2A8FC345000F802D /* CountryPickerUI.swift */,
+				04AFAB072A902926000F802D /* LineTextField.swift */,
+				04AFAB092A9161E6000F802D /* ServiceCall.swift */,
+				04AFAB0B2A917BD4000F802D /* Globs.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -215,6 +230,14 @@
 				04AFAB032A8FFAE0000F802D /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		04AFAB0D2A91A881000F802D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04AFAB0E2A91A90A000F802D /* UIKitExtension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,11 +385,16 @@
 				04AFAB002A8FC345000F802D /* CountryPickerUI.swift in Sources */,
 				0408EAD72A8F1DE600B35A6B /* SignInView.swift in Sources */,
 				0408EA8B2A8E59AA00B35A6B /* OnlineGroceriesApp.swift in Sources */,
+				04AFAB0F2A91A90A000F802D /* UIKitExtension.swift in Sources */,
 				0408EAD52A8F198400B35A6B /* RoundButton.swift in Sources */,
 				0408EACD2A8E7B2700B35A6B /* WelcomeView.swift in Sources */,
+				04AFAB0C2A917BD4000F802D /* Globs.swift in Sources */,
 				0408EA902A8E59AA00B35A6B /* OnlineGroceries.xcdatamodeld in Sources */,
 				04AFAB042A8FFAE0000F802D /* LoginView.swift in Sources */,
 				0408EAD32A8E91F900B35A6B /* UIExtension.swift in Sources */,
+				04AFAB062A902015000F802D /* MainViewModel.swift in Sources */,
+				04AFAB0A2A9161E6000F802D /* ServiceCall.swift in Sources */,
+				04AFAB082A902926000F802D /* LineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +566,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -581,7 +609,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

@@ -76,7 +76,7 @@ extension Color {
     }
     
     static var primaryText: Color {
-        return Color.white
+        return Color.black
     }
     
     static var secondaryText: Color {
@@ -121,5 +121,22 @@ extension Color {
             blue:  Double(b) / 255,
             opacity: Double(a) / 255
         )
+    }
+}
+
+struct ShowButton: ViewModifier {
+    @Binding var isShow: Bool
+    
+    public func body(content: Content) -> some View {
+        
+        HStack{
+            content
+            Button {
+                isShow.toggle()
+            } label: {
+                Image(systemName: isShow ?  "eye.fill" : "eye.slash.fill")
+                    .foregroundColor(.textTitle)
+            }
+        }
     }
 }
