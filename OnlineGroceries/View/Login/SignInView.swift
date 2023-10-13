@@ -22,7 +22,7 @@ struct SignInView: View {
                 .scaledToFill()
                 .frame( width: .screenWidth,
                         height: .screenHeight )
-                .padding(.bottom , 25)
+               
             
             
             VStack{
@@ -36,7 +36,7 @@ struct SignInView: View {
             ScrollView{
                 
                 VStack (alignment: .leading){
-                    Text ("Get your groceries \nwith nectar")
+                    Text ("Get your groceries \n with nectar")
                         .font(.customfont(.semibold, fontSize: 26))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
@@ -63,15 +63,42 @@ struct SignInView: View {
                         }
                         TextField("Enter Mobile", text: $txtMobile )
                             .frame(minWidth: 0, maxWidth: .infinity)
-                        
-                        
                     }
+                    
+                    NavigationLink{
+                        LoginView()
+                    } label: {
+                        Text ("Continue with Email Sign In")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(minWidth: 0, maxWidth:.infinity, minHeight: 60)
+                    .background(Color(hex:"5383EC"))
+                    .cornerRadius(20)
+                    .padding(.bottom,8)
+                    
+                  
+                    
+                    NavigationLink{
+                        SignUpView()
+                    } label: {
+                        Text ("Continue with Email Sign Up")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(minWidth: 0, maxWidth:.infinity, minHeight: 60)
+                    .background(Color.primaryApp)
+                    .cornerRadius(20)
+                    .padding(.bottom,8)
+                    
                     Divider()
-                        .padding(.bottom,25)
+                        .padding(.bottom,20)
                     
                     
                     Text ("Or connect with Social Media")
-                        .font(.customfont(.semibold, fontSize: 14))
+                        .font(.customfont(.semibold, fontSize: 18))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
@@ -127,13 +154,13 @@ struct SignInView: View {
             }
             .padding(.horizontal, 20)
             .frame(width: .screenWidth, alignment: .leading)
-            .padding(.top, .topInsets + .screenWidth )
+            .padding(.top, .topInsets + .screenWidth * 0.7 )
             
             
            
         }
         .onAppear {
-            self.countryObj = Country(phoneCode: "+1" , isoCode: "")
+            self.countryObj = Country(phoneCode: "1" , isoCode: "")
         }
         .sheet(isPresented: $isShowPicker, content: {
             CountryPickerUI(country: $countryObj)

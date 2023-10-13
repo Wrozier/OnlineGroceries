@@ -11,6 +11,12 @@ struct WelcomeView: View {
     var body: some View {
         
         ZStack(alignment: .top){
+            Image("splash_bg")
+                .resizable()
+                .scaledToFill()
+                .frame( width: .screenWidth,
+                        height: .screenHeight )
+            
             Image("welcome_top_shape")
                 .resizable()
                 .scaledToFill()
@@ -23,8 +29,9 @@ struct WelcomeView: View {
                 Image("app_logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 290, height: 290)
-                    .padding(.bottom, 60)
+                    .frame(width: 250, height: 250)
+                    .padding(.bottom, 1)
+                
                 
                 Text ("Welcome\nto our store")
                     .font(.customfont(.semibold, fontSize: 48))
@@ -41,7 +48,6 @@ struct WelcomeView: View {
                 NavigationLink {
                     SignInView()
                 } label: {
-                    
                     RoundButton(title: "Get Started") {
                     }
                     

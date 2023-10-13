@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="i6f-RF-kh7">
-                                <rect key="frame" x="0.0" y="211" width="393" height="368"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo 4" translatesAutoresizingMaskIntoConstraints="NO" id="RcK-gI-PPc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="i6f-RF-kh7" secondAttribute="trailing" id="4OB-kc-iPf"/>
-                            <constraint firstItem="i6f-RF-kh7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ivo-iV-hgQ"/>
-                            <constraint firstItem="i6f-RF-kh7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wMf-aB-sxf"/>
+                            <constraint firstItem="RcK-gI-PPc" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="eHR-8t-cvK"/>
+                            <constraint firstItem="RcK-gI-PPc" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="oN5-sm-StP"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="RcK-gI-PPc" secondAttribute="bottom" id="qXJ-TR-i9h"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="RcK-gI-PPc" secondAttribute="trailing" id="yF4-k9-f7G"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,6 +38,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="app_logo" width="434" height="368"/>
+        <image name="app_logo 4" width="1600" height="3200"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

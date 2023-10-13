@@ -45,7 +45,7 @@ struct LoginView: View {
                     .padding(.bottom,.screenWidth * 0.07)
                 
                 LineSecureField( title:"Password", placeholder:"Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
-                    .padding(.bottom,.screenWidth * 0.02)
+                    
                     
                 Button {
                     
@@ -63,18 +63,21 @@ struct LoginView: View {
                 .padding(.bottom,.screenWidth * 0.05)
                 
                 
-                HStack{
-                    Text("Dont have an account?")
-                        .font(.customfont(.medium , fontSize: 14))
-                        .foregroundColor(.primaryText)
-                    Text("Sign Up?")
-                        .font(.customfont(.medium , fontSize: 14))
-                        .foregroundColor(.primaryApp)
-                    
+                NavigationLink {
+                    SignUpView()
+                } label: {
+                    HStack{
+                        Text("Dont have an account?")
+                            .font(.customfont(.medium , fontSize: 14))
+                            .foregroundColor(.primaryText)
+                        Text("Sign Up?")
+                            .font(.customfont(.medium , fontSize: 14))
+                            .foregroundColor(.primaryApp)
+                        
+                    }
                 }
+                
                 Spacer()
-                
-                
             }
             .padding(.top, .topInsets + 64)
             .padding(.horizontal, 20)
@@ -113,6 +116,9 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        
+        NavigationView {
+            LoginView()
+        }
     }
 }

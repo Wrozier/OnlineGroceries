@@ -16,7 +16,7 @@ class ServiceCall {
                 
             
             let parameterData = NSMutableData()
-                let dictKey = parameter.allKeys as! [String]
+            let dictKey = parameter.allKeys as! [String]
                 
                 var i = 0;
             
@@ -31,9 +31,6 @@ class ServiceCall {
                 
                 
             }
-            
-            
-            
                 var request = URLRequest(url: URL(string: path)!,timeoutInterval: 20)
                 request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             
@@ -52,7 +49,7 @@ class ServiceCall {
                             do {
                                   let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? NSDictionary
                                 
-                                debugPrint("response: ", jsonDictionary)
+                                debugPrint("response: ", jsonDictionary!)
                                 
                                 DispatchQueue.main.async {
                                     withSuccess(jsonDictionary)
@@ -82,6 +79,24 @@ class ServiceCall {
         }
         
     }
+    
+    
+    // let parameters  = "email=test%40gmail.com&password=123456&service_token="
+    // let postData =  parameters.data(using: .utf8)
+    
+    // var request = URLRequest(url: URL(string: "https://localhost:3001/api/app/login") ,timeoutInterval: Dobule.infinity)
+    // request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+    // request.httpMethod = "POST"
+    // request.httpBody = postData
+    
+    // let task =URLSession.shared.dataTask(with: request) { data, response, error in
+    // guard let data = data else {
+    // print(String(describing: error))
+    // return
+    // }
+    // print(String(data: data, encoding: .utf8)!)
+    // task.resume()
+    //}
 
 
 }
