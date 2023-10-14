@@ -57,7 +57,7 @@ struct OrderItemModel: Identifiable , Equatable {
         self.createdDate = (dict.value(forKey: "created_date") as? String ?? "").stringDateToDate() ?? Date()
         
     }
-    static func == (lhs: MyOrderModel, rhs: MyOrderModel) -> Bool {
+    static func == (lhs: OrderItemModel, rhs: OrderItemModel) -> Bool {
            return lhs.id == rhs.id
        }
     

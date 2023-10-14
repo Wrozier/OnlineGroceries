@@ -10,11 +10,14 @@ import SwiftUI
 struct PromoCodeModel: Identifiable, Equatable {
     var id: Int = 0
     var type: Int = 0
+    
     var title: String = ""
     var code: String = ""
     var description: String = ""
+    
     var startDate: Date = Date()
-    var endDate: Data = Date()
+    var endDate: Date = Date()
+    
     var minOrderAmount: Double = 0.0
     var maxDiscountAmount: Double = 0.0
     var offerPrice: Double = 0.0

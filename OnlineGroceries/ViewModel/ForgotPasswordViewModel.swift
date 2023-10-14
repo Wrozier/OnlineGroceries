@@ -34,8 +34,7 @@ class ForgotPasswordViewModel: ObservableObject {
             self.showError = true
             return
         }
-        
-        ServiceCall.post(parameter: ["email": txtEmail ], path: Globs.SV_FORGOT_PASSWORD_REQUEST, isToken: false ) { responseObj in
+        ServiceCall.post(parameter: ["email": txtEmail], path: Globs.SV_FORGOT_PASSWORD_REQUEST, isToken: false ) { responseObj in
             if let response = responseObj as? NSDictionary {
                 if response.value(forKey: KKey.status) as? String ?? "" == "1" {
                     self.showVerify = true
@@ -44,15 +43,14 @@ class ForgotPasswordViewModel: ObservableObject {
                     self.showError = true
                 }
             }
-            
-            
         } failure: { error in
             self.errorMessage = error?.localizedDescription ?? "Fail"
             self.showError = true
-            
         }
     }
-    func serviceCallSetPassword() {
+    
+    
+    func serviceCallVerify() {
         
         
         if(txtResetCode.count != 4) {
@@ -77,43 +75,43 @@ class ForgotPasswordViewModel: ObservableObject {
     }
     
     func serviceCallSetPassword() {
-        
-        if(txtNewPassword.count < 6 ) {
-            self.errorMessage = "Please enter new password minimum 6 character"
-            self.showError = true
-            return
-        }
-        
-        if(txtNewPassword != txtConfirmPassword) {
-            self.errorMessage = "Password not match"
-            self.showError = true
-            return
-        }
-        
-        ServiceCall.post(parameter: ["user_id": self.resetObj?.value(forKey: "user_id") ?? "", "reset_code":self.resetObj?.value(forKey: "reset_code") ?? "" , "new_password": txtNewPassword], path: Globs.SV_FORGOT_PASSWORD_SET_PASSWORD, isToken: false ) { responseObj in
-            if let response = responseObj as? NSDictionary {
-                if response.value(forKey: KKey.status) as? String ?? "" == "1" {
-                    
-                    self.txtEmail = ""
-                    self.txtConfirmPassword = ""
-                    self.txtNewPassword = ""
-                    
-                    self.showSetPassword = false
-                    
-                    self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Success"
-                    self.showError = true
-                    
-                }else{
-                    self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Fail"
-                    self.showError = true
+            
+            if(txtNewPassword.count < 6) {
+                self.errorMessage = "Please enter new password minimum 6 character"
+                self.showError = true
+                return
+            }
+            
+            if(txtNewPassword != txtConfirmPassword) {
+                self.errorMessage = "password not match"
+                self.showError = true
+                return
+            }
+            
+            
+            ServiceCall.post(parameter: ["user_id": self.resetObj?.value(forKey: "user_id") ?? "", "reset_code":self.resetObj?.value(forKey: "reset_code") ?? "" , "new_password": txtNewPassword], path: Globs.SV_FORGOT_PASSWORD_SET_PASSWORD, isToken: false ) { responseObj in
+                if let response = responseObj as? NSDictionary {
+                    if response.value(forKey: KKey.status) as? String ?? "" == "1" {
+                        
+                        self.txtEmail = ""
+                        self.txtConfirmPassword = ""
+                        self.txtNewPassword = ""
+                        
+                        self.showSetPassword = false
+                        
+                        self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Success"
+                        self.showError = true
+                        
+                    }else{
+                        self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Fail"
+                        self.showError = true
+                    }
                 }
-              }
             } failure: { error in
                 self.errorMessage = error?.localizedDescription ?? "Fail"
                 self.showError = true
             }
-            
-            
         }
+        
         
     }

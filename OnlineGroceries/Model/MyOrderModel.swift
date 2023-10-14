@@ -19,7 +19,6 @@ struct MyOrderModel: Identifiable , Equatable {
     var deliveryType: Int = 0
     var paymentStatus: Int = 0
     var paymentType: Int = 0
-    var paymentStatus: Int = 0
     var orderStatus: Int = 0
     var status: Int = 0
     
