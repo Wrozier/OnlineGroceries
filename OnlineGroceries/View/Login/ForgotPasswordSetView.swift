@@ -42,10 +42,10 @@ struct ForgotPasswordSetView: View {
                     .padding(.bottom, .screenWidth * 0.1)
                 
                 
-                LineSecureField( title: "New Password", placeholder: "Enter your new password", txt: $forgotVM.txtNewPassword, isShowPassword: $forgotVM.isNewPassword)
+                LineSecureField( title: "New Password", placholder: "Enter your new password", txt: $forgotVM.txtNewPassword, isShowPassword: $forgotVM.isNewPassword)
                     .padding(.bottom, .screenWidth * 0.02)
                 
-                LineSecureField( title: "Confirm Password", placeholder: "Enter your confirm password", txt: $forgotVM.txtConfirmPassword, isShowPassword: $forgotVM.isConfirmPassword)
+                LineSecureField( title: "Confirm Password", placholder: "Enter your confirm password", txt: $forgotVM.txtConfirmPassword, isShowPassword: $forgotVM.isConfirmPassword)
                     .padding(.bottom, .screenWidth * 0.04)
                 
                 
@@ -61,7 +61,7 @@ struct ForgotPasswordSetView: View {
             }
             .padding(.top, .topInsets + 64)
             .padding(.horizontal, 20)
-            .padding(.bottom, .bottomInsets)
+            .padding(.bottom)
             
             
             VStack {

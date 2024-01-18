@@ -37,7 +37,7 @@ struct ForgotPasswordView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 4)
                 
-                LineTextField(title: "Email", placeholder:"Enter your email adress", txt: $forgotVM.txtEmail, keyboardType: .emailAddress)
+                LineTextField(title: "Email", placholder:"Enter your email adress", txt: $forgotVM.txtEmail, keyboardType: .emailAddress)
                     .padding(.bottom, .screenWidth * 0.7)
                 
                 RoundButton(title: "Submit"){
@@ -49,7 +49,7 @@ struct ForgotPasswordView: View {
             }
             .padding(.top, .topInsets * 64)
             .padding(.horizontal, 20)
-            .padding(.bottom, .bottomInsets)
+            .padding(.bottom)
             
             VStack{
                 HStack{
@@ -74,7 +74,7 @@ struct ForgotPasswordView: View {
             Alert(title: Text(Globs.AppName), message: Text(forgotVM.errorMessage), dismissButton: .default(Text("Ok")))
         }
         .background(NavigationLink(destination: ForgotPasswordSetView(),isActive: $forgotVM.showSetPassword, label: {
-            EmptyView()
+            MainTabView()
         } ))
         .background(Color.white)
         .navigationTitle("")

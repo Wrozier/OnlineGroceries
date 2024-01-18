@@ -42,13 +42,13 @@ struct SignUpView: View {
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, .screenWidth * 0.1)
                     
-                    LineTextField( title:"Username", placeholder: "Enter your username", txt:$mainVM.txtUsername)
+                    LineTextField( title:"Username", placholder: "Enter your username", txt:$mainVM.txtUsername)
                         .padding(.bottom,.screenWidth * 0.07)
                     
-                    LineTextField( title:"Email", placeholder: "Enter your email address", txt:$mainVM.txtEmail, keyboardType: .emailAddress)
+                    LineTextField( title:"Email", placholder: "Enter your email address", txt:$mainVM.txtEmail, keyboardType: .emailAddress)
                         .padding(.bottom,.screenWidth * 0.07)
                     
-                    LineSecureField( title:"Password", placeholder:"Enter your password", txt: $mainVM.txtPassword, isShowPassword: $mainVM.isShowPassword)
+                    LineSecureField( title:"Password", placholder:"Enter your password", txt: $mainVM.txtPassword, isShowPassword: $mainVM.isShowPassword)
                         .padding(.bottom,.screenWidth * 0.04)
                     
                     VStack {
@@ -89,7 +89,7 @@ struct SignUpView: View {
                         LoginView()
                     } label: {
                         HStack{
-                            Text("Alredy have an account?")
+                            Text("Already have an account?")
                                 .font(.customfont(.medium , fontSize: 14))
                                 .foregroundColor(.primaryText)
                             Text("Sign In")
@@ -103,7 +103,7 @@ struct SignUpView: View {
                 }
                 .padding(.top, .topInsets + 64)
                 .padding(.horizontal, 20)
-                .padding(.top, .bottomInsets)
+                .padding(.top)
             }
             
             VStack{

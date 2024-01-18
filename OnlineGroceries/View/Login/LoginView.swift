@@ -41,10 +41,10 @@ struct LoginView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, .screenWidth * 0.1)
                 
-                LineTextField( title:"Email", placeholder: "Enter your email address", txt:$loginVM.txtEmail, keyboardType: .emailAddress)
+                LineTextField( title:"Email", placholder: "Enter your email address", txt:$loginVM.txtEmail, keyboardType: .emailAddress)
                     .padding(.bottom,.screenWidth * 0.07)
                 
-                LineSecureField( title:"Password", placeholder:"Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
+                LineSecureField( title:"Password", placholder:"Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
                     
                     
                 Button {
@@ -81,7 +81,7 @@ struct LoginView: View {
             }
             .padding(.top, .topInsets + 64)
             .padding(.horizontal, 20)
-            .padding(.top, .bottomInsets)
+            .padding(.top)
             
             VStack {
                 HStack {

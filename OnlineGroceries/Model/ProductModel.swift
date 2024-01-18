@@ -33,7 +33,7 @@ struct ProductModel:  Identifiable, Equatable {
     
 
     init(dict: NSDictionary) {
-        self.id = dict.value(forKey: "prod_id") as? Int ?? 0
+        self.id = dict.value(forKey: "user_id") as? Int ?? 0
         self.prodId = dict.value(forKey: "prod_id") as? Int ?? 0
         self.catId = dict.value(forKey: "cat_id") as? Int ?? 0
         self.brandId = dict.value(forKey: "brand_id") as? Int ?? 0

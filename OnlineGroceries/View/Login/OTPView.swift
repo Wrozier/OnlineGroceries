@@ -32,7 +32,7 @@ struct OTPView: View {
                 
                 
                 
-                LineTextField( title: "Code", placeholder: "- - - -", txt: $forgotVM.txtResetCode, keyboardType: .phonePad)
+                LineTextField( title: "Code", placholder: "- - - -", txt: $forgotVM.txtResetCode, keyboardType: .phonePad)
                     .padding(.bottom, .screenWidth * 0.07)
                 
                 
@@ -68,7 +68,7 @@ struct OTPView: View {
             }
             .padding(.top, .topInsets + 64)
             .padding(.horizontal, 20)
-            .padding(.bottom, .bottomInsets)
+            .padding(.bottom)
             
             
             VStack {
